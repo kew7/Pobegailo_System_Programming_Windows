@@ -1,9 +1,10 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
 #include <math.h>
+using namespace std;
 
-const int size = 10;   // размерность массива
-int    a[size];        // обрабатываемый массив
+const int Size = 10;   // размерность массива
+int    a[Size];        // обрабатываемый массив
 HANDLE  hDeadlock;     // сигнал о тупике
 HANDLE  hAnswer[2];    // для обработки тупика
 
@@ -15,7 +16,7 @@ DWORD WINAPI marker(LPVOID)
   for (;;)
   {
     // вычисляем случайный индекс
-    i = abs(rand()) % size;
+    i = abs(rand()) % Size;
     // проверяем, занят ли элемент
     if (!a[i])
       // нет, заполняем элемент
@@ -73,7 +74,7 @@ int main()
     WaitForSingleObject(hDeadlock, INFINITE);
     // выводим на консоль текущее состояние массива
     cout << "Current state of the array: ";
-    for (int i = 0; i < size; ++i)
+    for (int i = 0; i < Size; ++i)
       cout << a[i] << ' ';
     cout << endl;
     // завершать или нет поток marker?
