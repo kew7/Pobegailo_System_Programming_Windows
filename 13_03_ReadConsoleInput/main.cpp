@@ -1,5 +1,6 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 HANDLE  hStdIn, hStdOut; // для дескрипторов стандартного ввода и вывода
 BOOL  bRead = TRUE;      // для цикла обработки событий 
