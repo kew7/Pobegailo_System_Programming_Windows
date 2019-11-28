@@ -1,6 +1,7 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
 #include <eh.h>
+using namespace std;
 
 void se_trans_func(unsigned code, EXCEPTION_POINTERS *)
 {

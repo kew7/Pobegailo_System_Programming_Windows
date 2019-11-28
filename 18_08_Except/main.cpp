@@ -1,6 +1,7 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
 #include <float.h>
+using namespace std;
 
 int main()
 {

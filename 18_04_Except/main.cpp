@@ -1,5 +1,6 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 
 DWORD filter_function(DWORD  ec, int &a)

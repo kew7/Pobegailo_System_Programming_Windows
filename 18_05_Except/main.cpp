@@ -1,5 +1,6 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 EXCEPTION_RECORD er;  // информация об исключении
 

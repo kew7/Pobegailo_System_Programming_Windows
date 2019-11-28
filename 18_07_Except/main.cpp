@@ -1,5 +1,6 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 LONG new_filter(PEXCEPTION_POINTERS  pExceptionInfo)
 {
