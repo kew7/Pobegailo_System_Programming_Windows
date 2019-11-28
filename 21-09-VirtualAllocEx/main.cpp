@@ -1,5 +1,6 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 int main()
 {
@@ -17,8 +18,7 @@ int main()
   // создаем события
   hWrite = CreateEvent(NULL, FALSE, FALSE, WriteEvent);
   hRead = CreateEvent(NULL, FALSE, FALSE, ReadEvent);
-
-
+  
   STARTUPINFO si;
   PROCESS_INFORMATION pi;
 
