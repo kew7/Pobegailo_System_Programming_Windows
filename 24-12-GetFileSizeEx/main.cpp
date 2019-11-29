@@ -1,5 +1,6 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 int main()
 {
@@ -28,15 +29,15 @@ int main()
   }
   
   // определяем размер файла
-  if (!GetFileSizeEx(hFile, &liFileSize))
+  if (!GetFileSizeEx(hFile, &liFileSize)) {
     cerr << "Get file size failed." << endl
       << "The last error code: " << GetLastError() << endl;
     CloseHandle(hFile);
     cout << "Press any key to finish.";
     cin.get();
-
     return 0;
   }
+
   // выводим размер файла
   cout << "File size: " << liFileSize.LowPart << endl;
   // закрываем дескриптор файла 
