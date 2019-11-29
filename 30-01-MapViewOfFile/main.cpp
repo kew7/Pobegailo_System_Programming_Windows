@@ -1,5 +1,7 @@
 #include <windows.h>
-#include <fstream.h>
+#include <fstream>
+#include <iostream>
+using namespace std;
 
 int main()
 {
@@ -53,7 +55,7 @@ int main()
       0, 0,        // отображаем файл с начала
       0);          // отображаем весь файл
   // изменяем значения элементов массива
-  for (i = 0; i < 10; ++i)
+  for (int i = 0; i < 10; ++i)
     ptr[i] += 10;
   // отменяем отображение файла в память
   if (!UnmapViewOfFile(ptr))
@@ -83,7 +85,7 @@ int main()
   }
   // вводим финальный массив из файла и выводим на консоль
   cout << "Final array: ";
-  for (i = 0; i < 10; ++i)
+  for (int i = 0; i < 10; ++i)
   {
     in.read((char*)&a[i], sizeof(int));
     cout << a[i] << ' ';

@@ -1,5 +1,6 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 int main()
 {
@@ -14,7 +15,6 @@ int main()
       << "The last error code: " << GetLastError() << endl;
     cout << "Press any key to finish.";
     cin.get();
-
     return 0;
   }
   // выводим на консоль имя первого файла

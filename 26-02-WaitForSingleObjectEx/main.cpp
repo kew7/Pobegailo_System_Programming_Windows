@@ -1,7 +1,8 @@
 #define _WIN32_WINNT 0x0400
 
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 HANDLE  hEvent;    // дескриптор события
 HANDLE  hThread;   // дескриптор потока

@@ -1,7 +1,8 @@
 #define _WIN32_WINNT 0x0400  // версия не ниже, чем Windows NT 4.0
 
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 HANDLE  hThread;   // дескриптор потока
 DWORD  IDThread;   // идентификатор потока
