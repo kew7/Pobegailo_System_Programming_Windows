@@ -1,5 +1,6 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 int (*Add)(int);   // указатель на функцию Add из DLL
 

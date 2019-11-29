@@ -1,5 +1,6 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 extern "C" __declspec(dllimport) int Add(int n);
 
