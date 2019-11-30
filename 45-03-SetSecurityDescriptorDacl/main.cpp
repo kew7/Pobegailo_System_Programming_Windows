@@ -30,7 +30,7 @@ int main()
 
   // вводим им€ пользовател€, которому разрешим доступ к мьютексу
   printf("Input a user name: ");
-  _getws(wchUserName);
+  _getws_s(wchUserName);
 
   // определ€ем длину SID пользовател€
   if (!LookupAccountName(

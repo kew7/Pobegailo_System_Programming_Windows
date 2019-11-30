@@ -34,7 +34,7 @@ int main()
 
   // читаем имя файла или каталога
   printf("Input a file or directory name: ");
-  _getws(wchDirName);
+  _getws_s(wchDirName);
   
   // получаем длину дескриптора безопасности
   if (!GetFileSecurity(
@@ -76,7 +76,7 @@ int main()
   
   // вводим имя пользователя, которого добавляем в DACL
   printf("Input a user name: ");
-  _getws(wchUserName);
+  _getws_s(wchUserName);
   
   // определяем длину SID пользователя
   if (!LookupAccountName(

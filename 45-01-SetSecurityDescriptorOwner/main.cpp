@@ -26,11 +26,11 @@ int main()
 
   // читаем имя файла или каталога
   printf("Input a file or directory name: ");
-  _getws(wchDirName);
+  _getws_s(wchDirName);
 
   // вводим имя пользователя, который будет новым владельцем файла
   printf("Input a user name: ");
-  _getws(wchUserName);
+  _getws_s(wchUserName);
   
   // определяем длину SID пользователя
   if (!LookupAccountName(

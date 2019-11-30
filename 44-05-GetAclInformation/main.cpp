@@ -20,7 +20,7 @@ int main()
   
   // вводим имя файла
   printf("Input a directory or file name: ");
-  gets(chDirName);
+  gets_s(chDirName);
   
   // получаем длину дескриптора безопасности
   if (!GetFileSecurity(

@@ -31,7 +31,7 @@ int main()
 
   // вводим имя пользователя, которому разрешим доступ к каталогу
   printf("Input a user name: ");
-  _getws(wchUserName);
+  _getws_s(wchUserName);
 
   // определяем длину SID пользователя
   if (!LookupAccountName(
@@ -199,7 +199,7 @@ int main()
   
   // читаем имя создаваемого каталога
   printf("Input a new directory name: ");
-  _getws(wchDirName);       // вводим имя каталога
+  _getws_s(wchDirName);       // вводим имя каталога
 
   // создаем каталог
   if (!CreateDirectory(wchDirName, &sa))
