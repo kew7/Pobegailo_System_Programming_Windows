@@ -21,6 +21,10 @@ int main()
   
   DWORD dwRetCode;     // код возврата
   
+  // включаем отображение кириллицы
+  SetConsoleCP(1251);
+  SetConsoleOutputCP(1251);
+
   // открываем ключ каталога
   dwRetCode = RegOpenKeyEx(
     HKEY_LOCAL_MACHINE,    // локальна€ машина

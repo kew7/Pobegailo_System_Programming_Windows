@@ -86,7 +86,7 @@ int main()
   printf("SubAuthorityCount: %u\n", *lpSubAuthorityCount);
 
   printf("SubAuthorities: ");
-  for (i = 0; i < *lpSubAuthorityCount; ++i)
+  for (int i = 0; i < *lpSubAuthorityCount; ++i)
   {
     lpSubAuthority = GetSidSubAuthority(lpSID, i);
     printf("%u ", *lpSubAuthority);

@@ -15,6 +15,10 @@ int main()
   
   DWORD dwRetCode;      // код возврата
   
+  // включаем отображение кириллицы
+  SetConsoleCP(1251);
+  SetConsoleOutputCP(1251);
+
   if (!OpenProcessToken(
     GetCurrentProcess(),     // дескриптор процесса
     TOKEN_QUERY,             // чтение информации из маркера доступа

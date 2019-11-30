@@ -22,6 +22,10 @@ int main()
 
   DWORD dwRetCode;   // код возврата
 
+  // включаем отображение кириллицы
+  SetConsoleCP(1251);
+  SetConsoleOutputCP(1251);
+
   // инициализируем, так как NULL выдаст ошибку
   lpSd = (SECURITY_DESCRIPTOR*) new char[0];
 

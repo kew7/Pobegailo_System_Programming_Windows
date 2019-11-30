@@ -24,6 +24,10 @@ int main()
   
   DWORD dwRetCode;   // код возврата
 
+  // включаем отображение кириллицы
+  SetConsoleCP(1251);
+  SetConsoleOutputCP(1251);
+
   // получаем дескриптор станции окон
   hWindow = GetProcessWindowStation();
   

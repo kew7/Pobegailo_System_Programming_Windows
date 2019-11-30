@@ -10,6 +10,9 @@ int main()
 
   DWORD dwRetCode;     // код возврата
 
+  // включаем отображение кириллицы
+  SetConsoleCP(1251);
+  SetConsoleOutputCP(1251);
 
   // определяем длину имени привилегии для отображения
   if (!LookupPrivilegeDisplayName (
