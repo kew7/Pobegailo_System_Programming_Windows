@@ -1,5 +1,7 @@
 #include <windows.h>
-#include <fstream.h>
+#include <fstream>
+#include <iostream>
+using namespace std;
 
 char  service_name[] = "DemoService";    // имя сервиса
 

@@ -1,5 +1,6 @@
 #include <windows.h>
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 int main()
 {
@@ -81,7 +82,7 @@ int main()
 
   // закрываем дескрипторы
   CloseServiceHandle(hServiceControlManager);
-  CloseServiceHandle(hScLock);
+  CloseServiceHandle((SC_HANDLE)hScLock);
 
   return 0;
 }

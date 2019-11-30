@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <windows.h> 
 #include <lm.h>
-
+//#include <stdio.h>
+#include <iostream>
+using namespace std;
 #pragma comment( lib, "netapi32.lib" ) // подключаем сетевую библиотеку
 
 int main()
@@ -17,7 +19,7 @@ int main()
 // формируем имя сервера
   wscanf(L"%s", server_name + wcslen(server_name));
 
-  printf("Input user name: ");   // читаем имя пользователя
+  printf("Input user name: ");   // запрашиваем имя пользователя
   wscanf(L"%s", user_name);      // читаем имя пользователя
   ui.usri1_name = user_name;     // устанавливаем имя пользователя
 
@@ -30,7 +32,7 @@ int main()
 
   printf("Input user comment: ");
   getwchar();                      // очищаем поток
-  _getws(user_comment);            // читаем комментарии о пользователе
+  _getws_s(user_comment);            // читаем комментарии о пользователе
   ui.usri1_comment = user_comment; // устанавливаем комментарии
 
   ui.usri1_flags = UF_SCRIPT;    // исполнять скрипт при входе пользователя в систему
