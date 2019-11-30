@@ -21,7 +21,7 @@ int main()
 
   // вводим имя файла, к которому вы имеете доступ
   printf("Input a full path to your file or directory: ");
-  gets(chFileName);
+  gets_s(chFileName);
 
   // получаем длину дескриптора безопасности файла
   if (!GetFileSecurity(

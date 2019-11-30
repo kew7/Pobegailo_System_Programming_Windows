@@ -18,7 +18,7 @@ int main()
 
   // вводим полное имя файла, например: C:\\test.txt
   printf("Input a full path to your file: ");
-  gets(chFileName);
+  gets_s(chFileName);
 
   // открываем файл
   hFile = CreateFile(

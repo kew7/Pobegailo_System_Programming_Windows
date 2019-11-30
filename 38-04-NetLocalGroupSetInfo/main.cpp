@@ -47,7 +47,7 @@ int main()
 
   printf("Input group comments: ");
   getwchar();          // очищаем поток
-  _getws(comment);     // читаем комментарии о пользователе
+  _getws_s(comment);     // читаем комментарии о пользователе
   // устанавливаем новый комментарий
   group_info_1.lgrpi1_comment = comment;
 

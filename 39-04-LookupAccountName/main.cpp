@@ -76,7 +76,7 @@ int main()
     printf("%u ", lpSID->IdentifierAuthority.Value[i]);
   printf("\n");
   printf("SubAuthorities: ");
-  for (i = 0; i < lpSID->SubAuthorityCount; ++i)
+  for (int i = 0; i < lpSID->SubAuthorityCount; ++i)
     printf("%u ", lpSID->SubAuthority[i]);
   printf("\n");
 

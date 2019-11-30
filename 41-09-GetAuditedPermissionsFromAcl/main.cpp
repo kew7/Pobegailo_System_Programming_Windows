@@ -89,7 +89,7 @@ int main()
 
   // вводим имя файла или каталога, например: C:\\test.txt
   printf("Input a full path to your file: ");
-  _getws(wchFileName);
+  _getws_s(wchFileName);
 
   // получаем дескриптор безопасности файла
   dwRetCode = GetNamedSecurityInfo(
@@ -111,7 +111,7 @@ int main()
 
   // вводим имя пользователя
   printf("Input user_name: ");
-  _getws(wchUserName);       // вводим имя учетной записи
+  _getws_s(wchUserName);       // вводим имя учетной записи
 
   // получаем SID учетной записи
   // определяем длину SID пользователя

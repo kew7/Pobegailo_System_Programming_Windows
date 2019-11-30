@@ -23,7 +23,7 @@ int main()
   
   printf("Input group comments: ");
   getwchar();              // очищаем поток
-  _getws(comment);         // читаем комментарий о локальной группе
+  _getws_s(comment);         // читаем комментарий о локальной группе
   group_info.lgrpi1_comment = comment;   // устанавливаем комментарий
 
   // создаем локальную группу

@@ -44,7 +44,7 @@ int main()
 }
 
   // вводим имя домена
-  for (i = 0; i < n; ++i)
+  for (int i = 0; i < n; ++i)
     wprintf(L"%s\n", member_info[i].lgrmi3_domainandname);
 
   // устанавливаем членов в локальной группе

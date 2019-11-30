@@ -24,7 +24,7 @@ int main()
 
   // вводим имя файла, например: C:\\test.txt
   printf("Input a full path to your file: ");
-  _getws(wchFileName);
+  _getws_s(wchFileName);
 
   // вводим имя нового владельца объекта
   printf("Input a user name: ");

@@ -18,7 +18,7 @@ int main()
 
   // вводим имя файла, например: C:\\test.txt
   printf("Input a full path to your file: ");
-  gets(chFileName);
+  gets_s(chFileName);
 
   // получаем дескриптор безопасности файла
   dwRetCode = GetNamedSecurityInfo(
