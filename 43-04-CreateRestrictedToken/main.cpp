@@ -39,7 +39,7 @@ int main()
     return dwRetCode;
   }
   printf("Input a user name: ");
-  gets(chUserName);        // вводим имя пользователя
+  gets_s(chUserName);        // вводим имя пользователя
 
   // определяем длину SID пользователя
   if (!LookupAccountName(

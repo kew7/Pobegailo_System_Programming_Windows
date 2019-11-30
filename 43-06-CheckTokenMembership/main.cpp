@@ -75,7 +75,7 @@ int main()
   DWORD dwRetCode;             // код возврата
   
   printf("Input a group name: ");
-  gets(chGroupName);           // вводим им€ пользовател€
+  gets_s(chGroupName);           // вводим им€ пользовател€
 
   // определ€ем длину SID пользовател€
   if (!LookupAccountName(

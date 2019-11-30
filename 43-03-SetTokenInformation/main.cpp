@@ -54,7 +54,7 @@ int main()
   
   // вводим имя пользователя, которому разрешим доступ к каталогу
   printf("Input a user name: ");
-  gets(chUserName);
+  gets_s(chUserName);
   
   // определяем длину SID пользователя
   if (!LookupAccountName(
